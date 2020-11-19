@@ -7,7 +7,111 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.gallery{
+  column-count: 2;
+  column-gap: 40px;
+  column-rule: 1px solid lightblue; 
+}
+.gallery-row{
+  display: flex;
+  flex-direction: row;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div.repo {
+  background-color: #fff;
+	border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+  width: 100%;  
+  cursor: pointer;                   
+}
+
+.col{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.repo:hover {
+ 
+}
+
+div.repo img {
+  width: 50px;
+  height: 50px;
+ 
+}
+
+div.repo h3{
+  color: blue;
+}
+
+div.repo-desc {
+  padding: 15px;
+  text-align: center;
+  
+ 
+}
+h3{
+  text-align: center;
+}
+
+div.follower{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+div.follower img{
+  border-radius: 50%;
+  height: 80%;
+  width: 80%;
+}
+
+div.follower h3{
+  align-items: center;
+  justify-content: center;
+  font-size: 80%;
+}
+
+div.follower h3:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+.followerMain{
+  column-count: 2;
+}
+
+.User{
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+div.User div:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+input {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+
